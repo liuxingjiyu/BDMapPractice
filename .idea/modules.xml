@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BDMapPractice.iml" filepath="$PROJECT_DIR$/BDMapPractice.iml" />
+      <module fileurl="file://D:\Android\AndroidStudioProjects\BDMapPractice\BDMapPractice.iml" filepath="D:\Android\AndroidStudioProjects\BDMapPractice\BDMapPractice.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Android\AndroidStudioProjects\BDMapPractice\app\app.iml" filepath="D:\Android\AndroidStudioProjects\BDMapPractice\app\app.iml" />
     </modules>
   </component>
 </project>
