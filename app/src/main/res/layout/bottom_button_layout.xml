@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/zoom_out"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:text="缩小"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/zoom_in"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:text="放大"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/rotate"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:text="旋转"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/overlook"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:text="俯仰"
+        android:textSize="18sp"
+        />
+    <Button
+        android:id="@+id/scroll_by"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:text="移动"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>

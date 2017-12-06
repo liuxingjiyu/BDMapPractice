@@ -26,7 +26,6 @@ public abstract class BaseActivity extends AppCompatActivity {
     public final void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         mMapView = (MapView) findViewById(R.id.bmapView);
         baiduMap = mMapView.getMap();
         //mMapView.showScaleControl(false);
@@ -34,7 +33,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         /*float MinLevel = baiduMap.getMinZoomLevel();
         float MaxLevel = baiduMap.getMaxZoomLevel();
         Log.w("BaiDuMap","MinLevel:" + MinLevel +", MaxLevel:" + MaxLevel );*/
-        MapStatusUpdate newStatus = MapStatusUpdateFactory.newLatLngZoom(hmPos,15f);
+        MapStatusUpdate newStatus = MapStatusUpdateFactory.newLatLngZoom(hmPos,16f);
         baiduMap.setMapStatus(newStatus);
         init();
     }

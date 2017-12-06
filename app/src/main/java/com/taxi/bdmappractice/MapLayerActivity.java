@@ -14,7 +14,7 @@ public class MapLayerActivity extends BaseActivity {
 
     @Override
     public void init() {
-        layout = (LinearLayout) findViewById(R.id.base);
+        layout = (LinearLayout) findViewById(R.id.bottom_layout);
         layout.setVisibility(View.GONE);
 
         addButtonGroup();

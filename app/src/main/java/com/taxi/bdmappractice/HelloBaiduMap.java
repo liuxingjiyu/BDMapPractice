@@ -1,5 +1,8 @@
 package com.taxi.bdmappractice;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
+
 import com.baidu.mapapi.map.MapStatus;
 import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
@@ -12,12 +15,15 @@ public class HelloBaiduMap extends BaseActivity implements View.OnClickListener{
     }
 
     private void initBDMap(){
-
-        findViewById(R.id.zoom_in).setOnClickListener(this);
-        findViewById(R.id.zoom_out).setOnClickListener(this);
-        findViewById(R.id.overlook).setOnClickListener(this);
-        findViewById(R.id.rotate).setOnClickListener(this);
-        findViewById(R.id.scroll_by).setOnClickListener(this);
+        LinearLayout layout = (LinearLayout) findViewById(R.id.bottom_layout);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.bottom_button_layout, layout,false);
+        layout.addView(view);
+        view.findViewById(R.id.zoom_in).setOnClickListener(this);
+        view.findViewById(R.id.zoom_out).setOnClickListener(this);
+        view.findViewById(R.id.overlook).setOnClickListener(this);
+        view.findViewById(R.id.rotate).setOnClickListener(this);
+        view.findViewById(R.id.scroll_by).setOnClickListener(this);
     }
 
     @Override
