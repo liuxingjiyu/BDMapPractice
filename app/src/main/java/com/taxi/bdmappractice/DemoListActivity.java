@@ -31,7 +31,8 @@ public class DemoListActivity extends ListActivity {
 
     private ClassAndName[] datas = new ClassAndName[]{
             new ClassAndName(HelloBaiduMap.class,"HelloBaiduMap"),
-            new ClassAndName(MapLayerActivity.class,"MapLayerActivity")
+            new ClassAndName(MapLayerActivity.class,"MapLayerActivity"),
+            new ClassAndName(OverlayActivity.class,"OverlayActivity")
     };
 
     private BroadcastReceiver receiver;

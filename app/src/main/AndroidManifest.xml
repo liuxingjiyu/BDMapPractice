@@ -44,6 +44,7 @@
         </activity>
         <activity android:name=".HelloBaiduMap"/>
         <activity android:name=".MapLayerActivity"/>
+        <activity android:name=".OverlayActivity"/>
     </application>
 
 </manifest>
