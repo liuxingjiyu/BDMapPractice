@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.taxi.bdmappractice.HelloBaiduMap">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/zoom_out"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="缩小"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/zoom_in"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="放大"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/rotate"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="旋转"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/overlook"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="俯仰"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/scroll_by"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:text="移动"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

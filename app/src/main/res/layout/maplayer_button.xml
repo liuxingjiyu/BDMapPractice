@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_maplayer_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通图"/>
+        <RadioButton
+            android:id="@+id/rb_statellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星图"/>
+        <RadioButton
+            android:id="@+id/rb_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通图"/>
+
+    </RadioGroup>
+
+</LinearLayout>
