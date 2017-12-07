@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_maplayer_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <RadioGroup
+        android:id="@+id/rg_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_bound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="边界搜索"/>
+        <RadioButton
+            android:id="@+id/rb_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市搜索"/>
+        <RadioButton
+            android:id="@+id/rb_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周边搜索"/>
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cb_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详情"/>
+
+</LinearLayout>
