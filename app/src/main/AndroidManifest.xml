@@ -33,7 +33,7 @@
 
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="QbUjsRg3OGvZHRxicjSe3tTCq2nWyLOG" />
+            android:value="I1jlWGH7lHUmOfrG9OvvsjkpPKmqVjvs" />
 
         <activity android:name=".DemoListActivity">
             <intent-filter>
@@ -45,6 +45,7 @@
         <activity android:name=".HelloBaiduMap"/>
         <activity android:name=".MapLayerActivity"/>
         <activity android:name=".OverlayActivity"/>
+        <activity android:name=".SearchInBoundActivity"/>
     </application>
 
 </manifest>
