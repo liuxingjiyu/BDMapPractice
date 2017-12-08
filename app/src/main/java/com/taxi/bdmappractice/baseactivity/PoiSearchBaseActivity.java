@@ -1,4 +1,4 @@
-package com.taxi.bdmappractice;
+package com.taxi.bdmappractice.baseactivity;
 
 import com.baidu.mapapi.overlayutil.PoiOverlay;
 import com.baidu.mapapi.search.core.PoiInfo;

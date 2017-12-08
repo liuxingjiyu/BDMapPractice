@@ -1,4 +1,4 @@
-package com.taxi.bdmappractice;
+package com.taxi.bdmappractice.baseactivity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,6 +8,7 @@ import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
 import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.model.LatLng;
+import com.taxi.bdmappractice.R;
 
 
 public abstract class BaseActivity extends AppCompatActivity {

@@ -8,6 +8,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.baidu.mapapi.map.BaiduMap;
+import com.taxi.bdmappractice.baseactivity.BaseActivity;
 
 /**
  * Created by shizhengui on 2017/12/5.

@@ -6,6 +6,7 @@ import android.widget.LinearLayout;
 import com.baidu.mapapi.map.MapStatus;
 import com.baidu.mapapi.map.MapStatusUpdate;
 import com.baidu.mapapi.map.MapStatusUpdateFactory;
+import com.taxi.bdmappractice.baseactivity.BaseActivity;
 
 public class HelloBaiduMap extends BaseActivity implements View.OnClickListener{
 

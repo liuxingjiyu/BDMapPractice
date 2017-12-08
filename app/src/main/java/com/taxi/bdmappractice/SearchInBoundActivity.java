@@ -1,12 +1,9 @@
 package com.taxi.bdmappractice;
 
 import android.support.annotation.NonNull;
-import android.view.Gravity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.baidu.mapapi.model.LatLng;
@@ -18,9 +15,8 @@ import com.baidu.mapapi.search.poi.PoiCitySearchOption;
 import com.baidu.mapapi.search.poi.PoiDetailResult;
 import com.baidu.mapapi.search.poi.PoiDetailSearchOption;
 import com.baidu.mapapi.search.poi.PoiNearbySearchOption;
+import com.taxi.bdmappractice.baseactivity.PoiSearchBaseActivity;
 import com.taxi.bdmappractice.util.LogUtil;
-
-import static android.widget.LinearLayout.HORIZONTAL;
 
 /**
  * Created by taxi01 on 2017/12/7.

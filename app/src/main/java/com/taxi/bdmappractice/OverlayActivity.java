@@ -15,6 +15,7 @@ import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.Stroke;
 import com.baidu.mapapi.map.TextOptions;
 import com.baidu.mapapi.model.LatLng;
+import com.taxi.bdmappractice.baseactivity.BaseActivity;
 
 /**
  * Created by shizhengui on 2017/12/6.
