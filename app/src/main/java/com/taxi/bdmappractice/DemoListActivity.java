@@ -33,7 +33,8 @@ public class DemoListActivity extends ListActivity {
             new ClassAndName(HelloBaiduMap.class,"HelloBaiduMap"),
             new ClassAndName(MapLayerActivity.class,"MapLayerActivity"),
             new ClassAndName(OverlayActivity.class,"OverlayActivity"),
-            new ClassAndName(SearchInBoundActivity.class,"SearchInBoundActivity")
+            new ClassAndName(SearchInBoundActivity.class,"SearchInBoundActivity"),
+            new ClassAndName(MyRoutePlanSearch.class,"MyRoutePlanSearch")
     };
 
     private BroadcastReceiver receiver;
