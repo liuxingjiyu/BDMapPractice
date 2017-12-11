@@ -34,7 +34,8 @@ public class DemoListActivity extends ListActivity {
             new ClassAndName(MapLayerActivity.class,"MapLayerActivity"),
             new ClassAndName(OverlayActivity.class,"OverlayActivity"),
             new ClassAndName(SearchInBoundActivity.class,"SearchInBoundActivity"),
-            new ClassAndName(MyRoutePlanSearch.class,"MyRoutePlanSearch")
+            new ClassAndName(MyRoutePlanSearch.class,"MyRoutePlanSearch"),
+            new ClassAndName(LocationActivity.class,"LocationActivity")
     };
 
     private BroadcastReceiver receiver;
@@ -108,6 +109,10 @@ public class DemoListActivity extends ListActivity {
         if (ContextCompat.checkSelfPermission(this,Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED){
             permissionList.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
+        }
+        if (ContextCompat.checkSelfPermission(this,Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED){
+            permissionList.add(Manifest.permission.ACCESS_FINE_LOCATION);
         }
         if (!permissionList.isEmpty()){
             String[] permissions = permissionList.toArray(new String [permissionList.size()]);
