@@ -65,10 +65,13 @@ public class DrivingRouteOverlay extends OverlayManager {
                 // 最后路段绘制出口点
                 if (mRouteLine.getAllStep().indexOf(step) == (mRouteLine
                         .getAllStep().size() - 1) && step.getExit() != null) {
+                    Bundle c = new Bundle();
+                    c.putInt("index",mRouteLine.getAllStep().indexOf(step)+1);
                     overlayOptionses.add((new MarkerOptions())
                             .position(step.getExit().getLocation())
                                     .anchor(0.5f, 0.5f)
                                             .zIndex(10)
+                                                .extraInfo(c)
                                                     .icon(BitmapDescriptorFactory
                                                             .fromAssetWithDpi("Icon_line_node.png")));
 
@@ -196,9 +199,8 @@ public class DrivingRouteOverlay extends OverlayManager {
      * @return 是否处理了该点击事件
      */
     public boolean onRouteNodeClick(int i) {
-        if (mRouteLine.getAllStep() != null
-                && mRouteLine.getAllStep().get(i) != null) {
-            Log.i("baidumapsdk", "DrivingRouteOverlay onRouteNodeClick");
+        if (mRouteLine.getAllStep() != null) {
+            Log.i("baidumapsdk", "DrivingRouteOverlay onRouteNodeClick" +i);
         }
         return false;
     }
@@ -207,6 +209,7 @@ public class DrivingRouteOverlay extends OverlayManager {
     public final boolean onMarkerClick(Marker marker) {
         for (Overlay mMarker : mOverlayList) {
             if (mMarker instanceof Marker && mMarker.equals(marker)) {
+               // Log.i("baidumapsdk", "DrivingRouteOverlay onRouteNodeClick" + marker.getTitle()+marker.getPosition());
                 if (marker.getExtraInfo() != null) {
                     onRouteNodeClick(marker.getExtraInfo().getInt("index"));
                 }

@@ -26,9 +26,4 @@ public abstract class RoutePlanSearchBaseActivity extends BaseActivity implement
 
     protected abstract void routePlanSearchInit();
 
-    @Override
-    public void onGetWalkingRouteResult(WalkingRouteResult walkingRouteResult) {
-
-    }
-
 }
